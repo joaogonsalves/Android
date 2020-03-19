@@ -64,7 +64,7 @@
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TV3DKJT"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    
+
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
 
       <div class="android-header mdl-layout__header mdl-layout__header--waterfall">
@@ -80,6 +80,9 @@
             </label>
             <div class="mdl-textfield__expandable-holder">
               <input class="mdl-textfield__input" type="text" id="search-field">
+              <script>dataLayer.push({
+                pesquisa:querySelector("mdl-textfield__input").value
+              })</script>
             </div>
           </div>
           <!-- Navigation -->
